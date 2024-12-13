@@ -1,4 +1,4 @@
-﻿using EMedicineBE.Models;
+using EMedicineBE.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -70,7 +70,7 @@ namespace EMedicineBE.Controllers
             try
             {
 
-                string path = Path.Combine(@"C:\Users\100692\source\repos\PROJECT\emedicine_fe\public\assets\images\", fileModel.FileName);
+                string path = Path.Combine(@"C:\Users\100692\source\repos\E-Medicine\emedicine_fe\public\assets\images\", fileModel.FileName);
                 using (Stream stream = new FileStream(path, FileMode.Create))
                 {
                     fileModel.FormFile.CopyTo(stream);
